@@ -8,24 +8,34 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     
-    <!-- Fixed navbar top --!>
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="sticky-footer-navbar.css">
+	
+    <!-- Fixed navbar top -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">Fixed navbar</a>
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        
+		<a class="navbar-brand" href="#">Doomsday</a>
+        
+		
+        <span class="navbar-text">
+			What weekday is: 
+		</span>
+		<span class="navbar-text date-span">
+			"(date)"
+		</span>
+
+		<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-collapse collapse" id="navbarCollapse" style="">
-          <ul class="navbar-nav mr-auto">
+		
+		<div class="navbar-collapse collapse" id="navbarCollapse" style="">
+        
+		  <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
+              <a class="nav-link" href="#">New date <span class="sr-only">(current)</span></a>
             </li>
           </ul>
+		  
           <form class="form-inline mt-2 mt-md-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -36,8 +46,54 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+  
+	<main role="main" class="container">
+      <div class="row">
+		<div class="col-4">
+		<p>Doomsday for century?</p>
+		</div>
+		<div class="col-8">
+		</div>
+	  </div>
 
+      <div class="row">
+		<div class="col-4">
+		<p>Doomsday for year?</p>
+		</div>
+		<div class="col-8">
+		</div>
+	  </div>
+
+	        <div class="row">
+		<div class="col-4">
+		<p>Doomsday for month?</p>
+		</div>
+		<div class="col-8">
+		</div>
+	  </div>
+
+	<div class="row">
+		<div class="col-4">
+			<p>Doomsday for week?</p>
+		</div>
+		<div class="col-8">
+		</div>
+	  </div>
+	  
+      <div class="row">
+		<div class="col-4">
+		<p>Weekday?</p>
+		</div>
+		<div class="col-8">
+		</div>
+	  </div>
+
+    
+	<footer class="fixed-bottom cust_footer">
+      <div class="container">
+        <span class="text-muted">Place sticky footer content here.</span>
+      </div>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
